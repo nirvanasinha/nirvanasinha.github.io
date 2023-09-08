@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  /* overflow-x: hidden; */
+  overflow-y: auto;
+}
+
+:root {
+  /* font-size: 10 */
+}
+
+
+section {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+.border {
+ padding-left: 7vw;
+  padding-right: 7vw;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+  border: 0px solid #dee2e6!important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+
+.landing-page-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1%
+}
+
+
+img {
+  max-width: 100%;
+
+}
+
+
+.application-areas-page img{
+  /* width: 38rem;
+  height: 30rem; */
+  width: 80%;
+  height: 80%;
+
+}
+
+.left-about-pg img{
+  width: 50rem;
+  height: 50rem;
+ }
+
+ .customers img {
+   width: 15rem;
+   height: 15rem;
+ }
+
+
+.heading {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 3em;
+}
+
+.title {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 2rem;
+}
+
+.para-text {
+  display: flex;
+  align-items: center;
+}
+
+.para {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.5rem;
+}
+
+.small {
+  font-size: 1.5em;
+}
+
+.normal {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding-top: 1rem;
+
+}
+
+/* .pg-size {
+  min-height: 100vh;
+  min-width: 100vw;
+
+} */
+
+.landing-page {
+  background-color: 'F6F6F6';
+  display: flex;
+
+}
+
+.logo img{
+  height: 13rem;
+  width: 13rem;
+}
+.left-landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.right-landing-page {
+  width: 40%;
+  display: flex;
+}
+
+.about-page {
+  background-color: 'F6F6F6';
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1%
+}
+
+.right-about-pg {
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+}
+
+.application-areas-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.applications-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 3rem;
+}
+
+.image-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auto {
+  padding-right: 1rem;
+}
+
+.house {
+  padding-left: 1rem;
+}
+
+.wiring-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.wiring-grid img {
+  height: 20rem;
+  width: 20rem;
+}
+
+.components-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr ;
+  gap: 2%;
+}
+
+.consumables-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 2%;
+}
+
+.customer-grid-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5%;
+}
+
+.customer-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2%;
+}
+
+.contact{
+  display: flex;
+  padding-top: 15rem;
+
+}
+
+
+.contact-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 15rem;
+
+}
+
+.contact-grid img {
+  width: 100%;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 20rem;
+}
+
+.individual-details {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Media Queries */
+
+/* @media all and (max-width: 2000px) {
+  
+  
+  .heading {
+    font-size: 2em;
+  }
+} */
+
+
+@media all and (max-width: 800px){
+  .heading {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 2em;
+  }
+
+  .left-about-pg img{
+    width: 20rem;
+    height: 20rem;
+   }
+
+
+  .landing-page-grid {
+    grid-template-columns: 1fr;
+  }
+  .grid {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .about-page{
+    grid-template-columns: 1fr;
+  }
+
+  .title{
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .house {
+    padding-left: 0em;
+  }
+
+  .wiring-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .wiring-grid img {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .components-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .applications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .consumables-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .normal {
+    padding-top:1.1rem ;
+    font-size: 0.7rem
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+    padding-top: 5rem;
+    
+  }
+  .contact-grid img  {
+    width: 100%;
+    
+  }
+  .contact-details {
+    display: contents;
+  }
+
+  .small {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+}
